@@ -1,0 +1,9 @@
+FILTER WORDS
+let words = ['spray', 'limit', 'exuberant', 'destruction','elite', 'present']
+
+const modifiedWords = words.filter( (word, index, arr) => {
+  arr[index+2] +=' extra'
+  return word.length < 6
+})
+
+console.log(modifiedWords)
