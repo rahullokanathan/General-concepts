@@ -1,0 +1,7 @@
+ARRAY METHOD FOR EVERY USED HERE using array.every
+arr = [1, 2, 3];
+arr.every( (elem, index, arr) => {
+  arr.push('new')
+  console.log(`[${arr}][${index}] -> ${elem}`)
+  return elem < 4
+})
